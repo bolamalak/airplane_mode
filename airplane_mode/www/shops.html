@@ -1,0 +1,18 @@
+{% extends "templates/web.html" %}
+{% block page_content %}
+<h1>Available Shops</h1>
+<div class="row">
+    {% for shop in frappe.get_all('Shop', fields=['name', 'shop_name', 'area', 'rent_amount']) %}
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ shop.shop_name }}</h5>
+                <p class="card-text">Area: {{ shop.area }} sqft</p>
+                <p class="card-text">Rent: {{ shop.rent_amount }}</p>
+                <a href="/shops/{{ shop.name }}" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

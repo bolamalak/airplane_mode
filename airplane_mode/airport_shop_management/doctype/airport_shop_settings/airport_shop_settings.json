@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "creation": "2026-10-25 21:08:57.981131",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "default_rent_amount_column",
+  "currency_syfn",
+  "enable_rent_reminders"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_rent_amount_column",
+   "fieldtype": "Column Break",
+   "label": "Default Rent Amount"
+  },
+  {
+   "fieldname": "currency_syfn",
+   "fieldtype": "Currency"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_rent_reminders",
+   "fieldtype": "Check",
+   "label": "Enable Rent Reminders"
+  }
+ ],
+ "grid_page_length": 50,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-25 21:10:26.830840",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Airport Shop Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
